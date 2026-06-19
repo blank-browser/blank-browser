@@ -1,0 +1,74 @@
+diff --git a/chrome/browser/ui/color/chrome_color_mixer.cc b/chrome/browser/ui/color/chrome_color_mixer.cc
+index 2e09221633..075857fa97 100644
+--- a/chrome/browser/ui/color/chrome_color_mixer.cc
++++ b/chrome/browser/ui/color/chrome_color_mixer.cc
+@@ -487,7 +487,8 @@ void AddChromeColorMixer(ui::ColorProvider* provider,
+   mixer[kColorLocationBarBackgroundHovered] = {
+       kColorToolbarBackgroundSubtleEmphasisHovered};
+ 
+-  mixer[kColorLocationBarBorder] = {SkColorSetA(SK_ColorBLACK, 0x4D)};
++  mixer[kColorLocationBarBorder] = {
++      SkColorSetA(SkColorSetRGB(0x67, 0x9B, 0xFF), 0x8A)};
+   mixer[kColorLocationBarBorderOpaque] =
+       ui::GetResultingPaintColor(kColorLocationBarBorder, kColorToolbar);
+ 
+@@ -734,8 +735,10 @@ void AddChromeColorMixer(ui::ColorProvider* provider,
+       ui::GetColorWithMaxContrast(kColorThumbnailTabBackground);
+   mixer[kColorThumbnailTabStripBackgroundActive] = {ui::kColorFrameActive};
+   mixer[kColorThumbnailTabStripBackgroundInactive] = {ui::kColorFrameInactive};
+-  mixer[kColorToolbar] = {dark_mode ? SkColorSetRGB(0x35, 0x36, 0x3A)
+-                                    : SK_ColorWHITE};
++  mixer[ui::kColorFrameActive] = {SkColorSetRGB(0x08, 0x0D, 0x17)};
++  mixer[ui::kColorFrameInactive] = {SkColorSetRGB(0x16, 0x1C, 0x27)};
++  mixer[ui::kColorAccent] = {SkColorSetRGB(0x4F, 0x88, 0xFF)};
++  mixer[kColorToolbar] = {SkColorSetRGB(0x12, 0x17, 0x21)};
+   mixer[kColorToolbarContextualTasksButtonShadow] = {
+       ui::SetAlpha(ui::kColorShadowBase, 0x255 * 17 / 100)};
+   mixer[kColorToolbarButtonBackgroundHighlightedDefault] =
+@@ -755,8 +758,7 @@ void AddChromeColorMixer(ui::ColorProvider* provider,
+   mixer[kColorAvatarButtonNormalRipple] = {kColorToolbarInkDropRipple};
+   mixer[kColorToolbarButtonBorder] = ui::SetAlpha(kColorToolbarInkDrop, 0x20);
+   mixer[kColorToolbarButtonIcon] = {kColorToolbarButtonIconDefault};
+-  mixer[kColorToolbarButtonIconDefault] = ui::HSLShift(
+-      gfx::kGoogleGrey700, GetThemeTint(ThemeProperties::TINT_BUTTONS, key));
++  mixer[kColorToolbarButtonIconDefault] = {SkColorSetRGB(0xC9, 0xD7, 0xEC)};
+   mixer[kColorToolbarButtonIconDisabled] =
+       ui::SetAlpha(kColorToolbarButtonIcon, gfx::kDisabledControlAlpha);
+   mixer[kColorToolbarButtonIconHovered] = {kColorToolbarButtonIcon};
+@@ -792,14 +794,12 @@ void AddChromeColorMixer(ui::ColorProvider* provider,
+   mixer[kColorToolbarSeparatorDefault] =
+       ui::SetAlpha(kColorToolbarButtonIcon, 0x4D);
+   mixer[kColorToolbarText] = {kColorToolbarTextDefault};
+-  mixer[kColorToolbarTextDefault] = {dark_mode ? SK_ColorWHITE
+-                                               : gfx::kGoogleGrey800};
++  mixer[kColorToolbarTextDefault] = {SkColorSetRGB(0xE8, 0xF0, 0xFF)};
+   mixer[kColorToolbarTextDisabled] = {kColorToolbarTextDisabledDefault};
+   mixer[kColorToolbarTextDisabledDefault] =
+       ui::SetAlpha(kColorToolbarText, gfx::kDisabledControlAlpha);
+-  mixer[kColorToolbarTopSeparatorFrameActive] =
+-      GetToolbarTopSeparatorColorTransform(kColorToolbar,
+-                                           ui::kColorFrameActive);
++  mixer[kColorToolbarTopSeparatorFrameActive] = {
++      SkColorSetRGB(0x30, 0x70, 0xD8)};
+   mixer[kColorToolbarTopSeparatorFrameInactive] =
+       GetToolbarTopSeparatorColorTransform(kColorToolbar,
+                                            ui::kColorFrameInactive);
+diff --git a/chrome/browser/ui/color/omnibox_color_mixer.cc b/chrome/browser/ui/color/omnibox_color_mixer.cc
+index 3a4e4aae8b..2e02f0d18e 100644
+--- a/chrome/browser/ui/color/omnibox_color_mixer.cc
++++ b/chrome/browser/ui/color/omnibox_color_mixer.cc
+@@ -276,10 +276,10 @@ void AddOmniboxColorMixer(ui::ColorProvider* provider,
+       kColorLocationBarClearAllButtonIcon, gfx::kDisabledControlAlpha);
+ 
+   // Omnibox background colors.
+-  mixer[kColorToolbarBackgroundSubtleEmphasis] = ui::SelectBasedOnDarkInput(
+-      kColorToolbar, gfx::kGoogleGrey900, gfx::kGoogleGrey100);
+-  mixer[kColorToolbarBackgroundSubtleEmphasisHovered] =
+-      ui::BlendTowardMaxContrast(kColorToolbarBackgroundSubtleEmphasis, 0x0A);
++  mixer[kColorToolbarBackgroundSubtleEmphasis] = {
++      SkColorSetRGB(0x0B, 0x11, 0x1D)};
++  mixer[kColorToolbarBackgroundSubtleEmphasisHovered] = {
++      SkColorSetRGB(0x12, 0x1C, 0x2C)};
+ 
+   // Omnibox text colors.
+   mixer[kColorOmniboxText] =

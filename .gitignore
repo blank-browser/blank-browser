@@ -1,0 +1,25 @@
+# Local Chromium checkouts/build outputs should stay outside this repo.
+src/
+out/
+.gclient
+.gclient_entries
+
+# Build artifacts
+dist/
+*.exe
+*.dll
+*.pdb
+*.ninja
+*.stamp
+*.sha256
+
+# Local editor/system noise
+.vs/
+.vscode/
+.agents/
+.codex/
+Thumbs.db
+Desktop.ini
+
+# Local task handoffs
+handoff_blank_browser_core.md

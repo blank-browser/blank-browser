@@ -1,0 +1,81 @@
+﻿{
+    "source":  "blanklogo.png",
+    "generated":  "2026-06-19T12:42:34.4993163+02:00",
+    "assets":  [
+                   {
+                       "path":  "branding/exported/png/blank-browser-16.png",
+                       "bytes":  577,
+                       "sha256":  "EF5A6527C422891AB3A2757EC39350395326EA285363021CDDDCA5438A14D944"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-24.png",
+                       "bytes":  876,
+                       "sha256":  "71972309C96C8C960FBB46CD816CC34E93A6A971A657ABBE090E0B0B57F65D1D"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-32.png",
+                       "bytes":  1268,
+                       "sha256":  "AAAE34CD85D0A7BE16D150C69F4CEF7E48CA1354ADDA26E59FED95E4320C0313"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-48.png",
+                       "bytes":  2101,
+                       "sha256":  "23EC8C0FEAA4E7FDBD389790A7482F0D7C4E8AF81A9263DCF1A936E7D336C682"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-64.png",
+                       "bytes":  2879,
+                       "sha256":  "E24130317FDA1EA7B6EBE3BF3B371B6126760A18F9D2514B4662158A94FF6F2E"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-128.png",
+                       "bytes":  9030,
+                       "sha256":  "3F41309D3323959F87DA1900C0911C8C206CA25A5237CDC771542B8A1CF908E3"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-256.png",
+                       "bytes":  35892,
+                       "sha256":  "09E45BB5399CF71DBA8A9E50CFF0CE309D29239990BB0095EC11D2CD30F7DD95"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-512.png",
+                       "bytes":  142242,
+                       "sha256":  "E23F7781E9BF57319D1F5ABE4A356CAD100066F1A2437672DB02D13EC04F14BA"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-1024.png",
+                       "bytes":  470933,
+                       "sha256":  "ED761B3CD2B98D2CBD8CE192148A35DE93E6723F552F29F01A3E01FB2053C8E8"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-light-256.png",
+                       "bytes":  21229,
+                       "sha256":  "A7677816C7B89AC2B7E2973FF9825150671CF06778AF797DCBA308E868164E18"
+                   },
+                   {
+                       "path":  "branding/exported/png/blank-browser-dark-256.png",
+                       "bytes":  20948,
+                       "sha256":  "4DF9698850BA0371463183C7BA63EC340C47F01220FB1EF8AEB69C7163AF918E"
+                   },
+                   {
+                       "path":  "branding/exported/tiles/blank-browser-tile-small-44.png",
+                       "bytes":  1594,
+                       "sha256":  "DBCAA80AC3F8BF01B409BE324CB726469B55825631CB41438D35F479DC559187"
+                   },
+                   {
+                       "path":  "branding/exported/tiles/blank-browser-tile-150.png",
+                       "bytes":  7711,
+                       "sha256":  "3B19AB837D0D058ECB57DEA329805DAD7EB4D8D22874D21C9D6A9047CF460165"
+                   },
+                   {
+                       "path":  "branding/exported/win/blank-browser.ico",
+                       "bytes":  45245,
+                       "sha256":  "4190BDAF6885DA461FB92CE98C5E5FBB9BC835F5770472C4313F9CBF33B03A04"
+                   },
+                   {
+                       "path":  "branding/exported/win/blank-browser-installer.ico",
+                       "bytes":  45245,
+                       "sha256":  "4190BDAF6885DA461FB92CE98C5E5FBB9BC835F5770472C4313F9CBF33B03A04"
+                   }
+               ]
+}
